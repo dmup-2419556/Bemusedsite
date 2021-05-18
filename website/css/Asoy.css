@@ -1,0 +1,415 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  float: left;
+  color: #555;
+  font-size: 36px;
+    background-image: url(https://media.giphy.com/media/pjBLl26fGPCOqTBIvy/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin-top: -0.1%;
+}
+
+p {
+  text-align: justify;
+}
+
+#asoyinfo {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.snipcart-checkout {
+  float: right;
+  margin-top: 15px;
+  margin-left: 7px;
+  margin-right: -50px;
+}
+
+.snipcart-add-item{
+  border: 2px green;
+  padding: 8px 20px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  margin-top: -85px;
+}
+
+.snipcart-add-item:hover{
+  background-color: green;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 14px;
+}
+
+h3{
+  float: left;
+}
+
+
+.header {
+  padding: 10px 16px;
+  background: #bfc3ba;
+  color: #555;
+  border-bottom: 12px solid #555;
+  margin-bottom: 25px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.content {
+  padding-bottom: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.header {
+  text-align:right;
+  padding: 32px;
+  height: 100px;
+  z-index:999;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* increase/decrease font size */
+.font-change{
+  float: right;
+  background-color: #bfc3ba;
+  padding-top: 64px;
+  padding-left: 4px;
+  padding-right: 5px;
+	border-bottom: 4px solid #555;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+	column-fill: balance;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+}
+
+
+@media screen and (min-width:1200px;){
+  .column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+  }
+
+}
+
+/* Responsive layout -  */
+@media screen and (max-width: 1200px) {
+.column {
+  -ms-flex:33.33%;
+  flex:33.33%;
+  max-width: 33.33%;
+}
+#dua {
+  display: none;
+}
+#anti-yellow {
+  display: none;
+}
+}
+
+/* Responsive layout - */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+#dua {
+  display: inherit;
+}
+#anti-yellow {
+  display: inherit;
+}
+#vinyldisk {
+  margin-top: -200px;
+}
+}
+
+/* Responsive layout - */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  #dua {
+    display: inherit;
+  }
+  #anti-yellow {
+    display: inherit;
+  }
+}
+
+
+
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1e98b;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 6px 16px;
+    background: #555;
+    color: #f1f1f1;
+    height: 100px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+
+  body {
+  text-align: center;
+}
+
+h3 {
+  color: #bfc3ba;
+}
+
+form {
+  border: 3px;
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.container {
+  padding: 15.5px;
+  background-color: #555;
+}
+
+#main-text {
+  text-align: justify;
+  padding: 10px;
+
+}
+
+.instagramfeed {
+  border-radius: 14px;
+}
+
+
+.moresoon {
+	margin-top: 15px;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #f9f9f9;
+  color: black;
+  border: 2px solid #f1e98b;
+}
+
+.footer {
+  width: 100%;
+  padding: 6px 16px;
+  background: #555;
+  color: #f1f1f1;
+  height: 100px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+body {
+text-align: center;
+}
+
+h3 {
+color: #bfc3ba;
+}
+
+form {
+border: 3px;
+font-family: Arial;
+}
+
+.container {
+padding: 15.5px;
+background-color: #555;
+}
+
+#main-text {
+text-align: justify;
+padding: 10px;
+}
+
+.buttons {
+padding: 0;
+border: none;
+background: none;
+}
+
+.socialbuttons {
+width: 50%;
+float: left;
+border-radius: 50%;
+padding-left: 45px;
+}

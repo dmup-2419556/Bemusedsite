@@ -1,0 +1,360 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFFFFF;
+}
+
+#newin {
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px black;
+  font-size: 100px;
+  margin-bottom: -15px;
+  margin-top: -1px;
+}
+
+
+h2 {
+  float: left;
+  color: #555;
+  font-size: 36px;
+    background-image: url(https://media.giphy.com/media/pjBLl26fGPCOqTBIvy/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    margin-top: -0.1%;
+}
+
+
+.snipcart-checkout {
+  float: right;
+  margin-top: 15px;
+  margin-left: 7px;
+  margin-right: -50px;
+}
+
+.snipcart-add-item{
+  border: 2px green;
+  padding: 8px 20px;
+  border-radius: 14px;
+  margin-bottom: 15px;
+  margin-top: -85px;
+}
+
+.snipcart-add-item:hover{
+  background-color: green;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 14px;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #bfc3ba;
+  color: #555;
+  border-bottom: 12px solid #555;
+  margin-bottom: 25px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.content {
+  padding-bottom: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.header {
+  text-align:right;
+  padding: 32px;
+  height: 100px;
+  z-index:999;
+
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* increase/decrease font size */
+.font-change{
+  float: right;
+  background-color: #bfc3ba;
+  padding-top: 64px;
+  padding-left: 4px;
+  padding-right: 5px;
+  border-bottom: 4px solid #555;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media only screen
+  and (max-device-width: 736px) {
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+  .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1e98b;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay {overflow-y: auto;}
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .container:after,
+  .row:after,
+  .col:after,
+  .clr:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .col {
+    display: block;
+    width: 100%;
+    float: left;
+  }
+
+  @media (min-width: 768px) {
+    .gutters .col {
+      margin-left: 2%;
+    }
+    .gutters .col:first-child {
+      margin-left: 0;
+    }
+
+    .span-1 { width: 8.33333333333%; }
+    .span-2 { width: 16.6666666667%; }
+    .span-3 { width: 25%; }
+    .span-4 { width: 33.3333333333%; }
+    .span-5 { width: 41.6666666667%; }
+    .span-6 { width: 50%; }
+    .span-7 { width: 58.3333333333%; }
+    .span-8 { width: 66.6666666667%; }
+    .span-9 { width: 75%; }
+    .span-10 { width: 83.3333333333%; }
+    .span-11 { width: 91.6666666667%; }
+    .span-12 { width: 100%; }
+
+    .gutters .span-1 { width: 6.5%; }
+    .gutters .span-2 { width: 15.0%; }
+    .gutters .span-3 { width: 23.5%; }
+    .gutters .span-4 { width: 32.0%; }
+    .gutters .span-5 { width: 40.5%; }
+    .gutters .span-6 { width: 49.0%; }
+    .gutters .span-7 { width: 57.5%; }
+    .gutters .span-8 { width: 66.0%; }
+    .gutters .span-9 { width: 74.5%; }
+    .gutters .span-10 { width: 83.0%; }
+    .gutters .span-11 { width: 91.5%; }
+    .gutters .span-12 { width: 100%; }
+  }
+
+.span-6 img {
+  width: 100%;
+
+}
+
+#wpop{
+  font-size: 20px;
+}
+  .button5 {
+    background-color: white;
+    padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    margin-bottom: 15px;
+    margin-top: 5%;
+    border-radius: 14px;
+
+  }
+
+
+  .card img {
+    width: 100%;
+    border-radius: 14px;
+  }
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 6px 16px;
+    background: #555;
+    color: #f1f1f1;
+    height: 100px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+
+  body {
+  text-align: center;
+}
+
+h3 {
+  color: #bfc3ba;
+  float: left;
+}
+
+
+
+.container {
+  padding: 15.5px;
+  background-color: #555;
+}
+
+#main-text {
+  text-align: justify;
+  padding: 10px;
+
+}
+
+.buttons {
+  padding: 0;
+border: none;
+background: none;
+}
+
+.socialbuttons {
+  width: 50%;
+  float: left;
+  border-radius: 50%;
+  padding-left: 45px;
+}
